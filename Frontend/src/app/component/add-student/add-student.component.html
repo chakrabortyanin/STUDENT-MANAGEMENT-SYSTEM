@@ -1,0 +1,52 @@
+<div class="center">
+
+  <mat-card class="example-card">
+    <mat-card-title>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Student Details</mat-label>
+        <input matInput disabled value="">
+      </mat-form-field>
+    </mat-card-title>
+
+    <form class="example-form">
+
+
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Name</mat-label>
+              <input matInput [(ngModel)]="studentInfo.name" name="name">
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Stream</mat-label>
+              <input matInput [(ngModel)]="studentInfo.stream" name="stream">
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Roll</mat-label>
+              <input matInput [(ngModel)]="studentInfo.roll" name="roll">
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <button mat-button (click)="addStudent()">ADD</button>
+    <button mat-button (click)="clearB()">CLEAR</button>
+  </mat-card>
+  
+</div>
